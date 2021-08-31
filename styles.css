@@ -1,0 +1,56 @@
+body{
+    background-color: silver;
+}
+.leftimg{
+    float: left;
+}
+ .inline{
+    text-align: justify;
+    text-overflow: clip;
+}
+.vis-box {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px 30px 40px;
+	background-color: white;
+}
+.header {
+	padding-top: 20px; 
+	padding-left: 5px;
+	color: rgb(80, 146, 221);
+	font-size: 28px;
+	font-weight: lighter;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#header {
+	padding-top: 5px; 
+	padding-left: 5px;
+	color: rgb(80, 146, 221);
+	font-size: 28px;
+	font-weight: lighter ;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#vis-image {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.plot-box {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px 30px 5px;
+	background-color: white;
+}
+#comp-image {
+	float: left;
+	width: 90%;
+	height: 90%;
+}
+.comp-box {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	margin-right: 40px;
+	margin-left: 40px;
+	padding: 10px 30px 40px;
+	background-color: white;
+}

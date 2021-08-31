@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Lat and lng Analysis</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" id="header">Latitude</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./data.html">Data</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./mextemp.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="./humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="./cloudiness.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="./windspeed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br>
+
+    <div class="container">
+        <section class="row">
+        <div class="col-sm-12 col-md-6 col-lg-7">
+            <div class="plot-box">
+                <h3 class="header">Summary: Latitude vs. X</h3>
+                <hr>
+                <div>
+                    <img class= "col-sm-12 col-md-6 col-lg-6 leftimg" src= "Resources/assets/images/Fig1.png" alt="temp vs latitude">
+                </div>
+                    <p class="inline">
+                        The purpose of this project was to analyze how weather changes
+                        as you get closer to the equator. To accomplish this analysis, we
+                        first pulled data from the OpenWeatherMap API to assemble a
+                        dataset on over 500 cities.
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various
+                        aspects of the weather vs latitude. Factors we looked at included:
+                        temperature, cloudiness, wind speed, and humidity. This site provides the source data and
+                        visualizations created as part of the analysis, as well as explanations 
+                        and descriptions of any trends and correlations witnessed.
+                    </p>
+            </div>  
+        </div>
+
+            
+            <div class= "col-sm-12 col-md-6 col-lg-5">
+                <div class ="vis-box">   
+                    <h3 class="header">Visualizations</h3>
+                    <hr>
+            
+                    <div class="container">
+                    <div class="row">
+                        <div class ="col-sm-3 col-md-6 col-lg-6">
+                            <a href="./mextemp.html">
+                                <img src="Resources/assets/images/Fig1.png" alt="latitude vs temp" id="vis-image">
+                            </a>
+                        </div>
+
+                        <div class ="col-sm-3 col-md-6 col-lg-6">
+                            <a href="./humidity.html">
+                                <img src="Resources/assets/images/Fig2.png" alt="latitude vs humidity" id="vis-image">
+                            </a>
+                        </div>
+
+                        <div class ="col-sm-3 col-md-6 col-lg-6">
+                            <a href="./cloudiness.html">
+                                <img src="Resources/assets/images/Fig3.png" alt="latitude vs cloudiness" id="vis-image">
+                            </a>
+                        </div>
+
+                        <div class ="col-sm-3 col-md-6 col-lg-6">
+                            <a href="./windspeed.html">
+                                <img src="Resources/assets/images/Fig4.png" alt="latitude vs wind speed" id="vis-image">
+                            </a>
+                        </div>
+                    </div>    
+                    </div>    
+                </div>
+            </div> 
+    </div>
+
+</body>
+
+</html>
