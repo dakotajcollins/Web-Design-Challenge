@@ -3,6 +3,8 @@
 
 <head>
 
+
+
   <meta charset="UTF-8">
   <title>Lat and lng Analysis</title>
 
@@ -46,7 +48,61 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
     <br>
+
+    <div class="container">
+        <section class="row">
+        <div class="col-sm-12 col-md-8">
+            <div class="main-box">
+                <h3 class="header">Humidity</h3>
+                <hr>
+                <div>
+                    <img class= "col-sm-12 leftimg" src= "Resources/assets/images/Fig2.png" alt="temp vs humidity">
+                </div>
+                    <p class="inline">
+                        This plot seems to show little correlation between humidity levels and latitude. 
+                        We can however see that at this time we were likely to see higher levels of humidity. 
+                    </p>
+                    
+            </div>  
+        </div>
+
+            
+            <div class= "col-sm-12 col-md-4">
+                <div class ="vis-box">   
+                    <h3 class="header">Visualizations</h3>
+                    <hr>
+            
+                    <div class="container">
+                    <div class="row">
+                        <div class ="col-sm-4 col-md-6 col-lg-6">
+                            <a href="./mextemp.html">
+                                <img src="Resources/assets/images/Fig1.png" alt="latitude vs temp" id="vis-image">
+                            </a>
+                        </div>
+
+                        <div class ="col-sm-4 col-md-6 col-lg-6">
+                            <a href="./humidity.html">
+                                <img src="Resources/assets/images/Fig2.png" alt="latitude vs humidity" id="selected-image">
+                            </a>
+                        </div>
+
+                        <div class ="col-sm-4 col-md-6 col-lg-6">
+                            <a href="./cloudiness.html">
+                                <img src="Resources/assets/images/Fig3.png" alt="latitude vs cloudiness" id="vis-image">
+                            </a>
+                        </div>
+
+                        <div class ="col-sm-4 col-md-6 col-lg-6">
+                            <a href="./windspeed.html">
+                                <img src="Resources/assets/images/Fig4.png" alt="latitude vs wind speed" id="vis-image">
+                            </a>
+                        </div>
+                    </div>    
+                    </div>    
+                </div>
+            </div> 
+    </div>
 </body>
 </html>
